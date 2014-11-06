@@ -45,7 +45,7 @@ Parasite:
 .. code:: bash
 
    (parasitology)$ sudo iptables -I OUTPUT 1 -p tcp --tcp-flags RST RST -s 127.0.0.1 -d 127.0.0.1 --dport 8080 -j DROP
-   (parasitology)$ ./parasite.py nsat http 8080
+   (parasitology)$ sudo $VIRTUAL_ENV/bin/python parasite.py nsat checksum-http --port 8080
    (a or b) and (!b or c or !d) and (d or !e)
    ...
 
