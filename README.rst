@@ -31,7 +31,7 @@ What's going on:
 
 .. code:: bash
 
-   $ sudo tshark  -i lo -f "tcp port 8080"
+   $ sudo tshark -i lo -f "tcp port 8080"
 
 Hosts:
 
